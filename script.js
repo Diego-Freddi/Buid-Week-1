@@ -135,8 +135,8 @@ function nicoloOff() {
   domandaRandom()
 }
 
-//------------------------ ANDREA ---------------------------
-let counter = 60;
+//------------------------ ANDREA / ALESSANDRO ---------------------------
+let counter = 10;
 let timer = null;
 let tempo = document.getElementById('tempo'); // Il contatore numerico
 let cerchio = document.querySelector('.cerA'); // Seleziona il cerchio animato
@@ -157,7 +157,7 @@ function avviaTimer() {
     clearInterval(timer); // Ferma il timer precedente
   }
 
-  counter = 10; // Reimposta il contatore a 60 secondi
+  counter = 10; // Reimposta il contatore a 10 secondi
   tempo.innerHTML = counter; // Aggiorna il contatore numerico
   progresso(100); // Reimposta il cerchio a pieno (100%)
 
@@ -166,8 +166,8 @@ function avviaTimer() {
     if (counter == 0) { // Controlla se il contatore ha raggiunto il valore di 0
       domandaRandom() // Se a zero, passa alla prosima domanda
       noAnswer() // fa partire la funzione che aggiunge in risposte non date
-      counter = 10
       aggiorna_footer()
+      counter = 10
     }
     if (counter > 0) {
       tempo.innerHTML = counter; // Aggiorna il testo del tempo
@@ -177,7 +177,7 @@ function avviaTimer() {
     } else {
       clearInterval(timer); // Ferma il timer quando arriva a 0
     }
-    // Stop del timer al superamento della
+    // Ferma il timer alla fine del QUIZ
     if (nDomanda > 10) {
       clearInterval(timer)
     }

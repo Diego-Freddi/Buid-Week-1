@@ -13,13 +13,11 @@
 
 #nicolo {
   display: block;
-  width: 90%;
+  width: 1100px;
   margin: auto;
-  margin-top: 87px;
 }
 
 h1 {
-  margin-top: 55px;
   font-family: Outfit;
   font-size: 90px;
   color: white;
@@ -61,14 +59,15 @@ label {
 main {
   display: flex;
   flex-direction: column;
-  margin-top: 50px;
+  min-height: 26vw;
+  padding-top: 3vw;
 }
 
 #Form {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 108px;
+  padding-top: 22px;
 }
 #Form p {
   color: white;
@@ -163,91 +162,10 @@ main {
   cursor: pointer;
 }
 
-#diego {
-  display: none;
-  width: 90%;
-  margin: auto;
-}
-
-body {
-  background-image: url(assets/bg.jpg);
-  background-size: cover;
-  min-height: 100vh;
-  background-position: right;
-  background-repeat: no-repeat;
-}
-
-#logo {
-  width: 21vw;
-}
-
-.btnOn {
-  text-align: center;
-  font-size: 25px;
-  font-weight: bold;
-  width: 240px;
-  height: 80px;
-  background-color: #00ffff;
-  border: solid 1px #00ffff;
-  box-shadow: 0px 0px 50px 5px #00ffff;
-  cursor: pointer;
-}
-
-#testPage {
-  margin-top: 6vw;
-  min-height: 28vw;
-}
-
-#quest {
-  min-height: 120px;
-}
-
-#domande {
-  font-family: outfit;
-  font-size: 2vw;
-  color: white;
-  width: 70%;
-  margin: auto;
-  text-align: center;
-}
-
-#risposte {
-  font-family: sans-serif;
-  width: 50%;
-  margin: auto;
-  min-height: 20vw;
-}
-#risposte .button {
-  border: 2px solid;
-  background-color: rgba(255, 255, 255, 0.1019607843);
-  color: white;
-  font-size: 1.3vw;
-  width: 20vw;
-  padding: 20px;
-  border-radius: 50px;
-}
-#risposte #sopra {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  margin-bottom: 20px;
-}
-#risposte #sotto {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-}
-
-#proceed {
-  display: flex;
-  justify-content: end;
-}
-
 #andrea {
   display: none;
-  width: 90%;
+  width: 1100px;
   margin: auto;
-  margin-top: 40px;
 }
 
 .contenitore {
@@ -354,8 +272,8 @@ body {
   align-items: center;
   /* Allinea verticalmente il logo e il timer */
   width: auto;
-  height: auto;
-  /* Altezza adattabile */
+  height: 165px;
+  padding-top: 4%;
 }
 
 .header img {
@@ -365,12 +283,96 @@ body {
   /* Imposta un'altezza fissa per il logo */
 }
 
+body {
+  background-image: url(assets/bg.jpg);
+  background-size: cover;
+  min-height: 100vh;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+#logo {
+  width: 21vw;
+}
+
+.btnOn {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  width: 240px;
+  height: 80px;
+  background-color: #00ffff;
+  border: solid 1px #00ffff;
+  box-shadow: 0px 0px 50px 5px #00ffff;
+  cursor: pointer;
+}
+
+#diego {
+  display: none;
+  width: 1100px;
+  margin: auto;
+  padding-top: 3vw;
+}
+
+#testPage {
+  min-height: 26vw;
+}
+
+#quest {
+  min-height: 100px;
+  width: 83%;
+  margin: auto;
+}
+
+#domande {
+  font-family: outfit;
+  font-size: 1.5vw;
+  color: white;
+  width: 87%;
+  margin: auto;
+  text-align: center;
+}
+
+#risposte {
+  font-family: sans-serif;
+  width: 50%;
+  margin: auto;
+  min-height: 20vw;
+}
+#risposte .button {
+  border: 2px solid;
+  background-color: rgba(255, 255, 255, 0.1019607843);
+  color: white;
+  font-size: 1.3vw;
+  width: 20vw;
+  padding: 20px;
+  border-radius: 50px;
+}
+#risposte #sopra {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 20px;
+}
+#risposte #sotto {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+#proceed {
+  display: flex;
+  justify-content: end;
+}
+
 /* _________________footer_________________________ */
 footer {
   font-size: larger;
   text-align: center;
   font-family: Outfit;
   letter-spacing: 3px;
+  min-height: 105px;
+  margin-top: 2vw;
 }
 
 #conta {
@@ -393,9 +395,8 @@ footer {
 
 #fabio {
   display: none;
-  width: 90%;
+  width: 1100px;
   margin: auto;
-  margin-top: 87px;
 }
 
 #fine {
@@ -419,7 +420,7 @@ footer {
 #esito {
   color: white;
   font-family: Outfit, sans-serif;
-  font-size: 30px;
+  font-size: 25px;
   margin: 0;
 }
 
@@ -437,11 +438,11 @@ footer {
 }
 
 #mostraRisultati {
-  height: 300px;
+  min-height: 26vw;
   display: none;
   z-index: 5;
   background-color: transparent;
-  padding-block: 100px;
+  margin-top: 5vw;
 }
 
 .contenitore_grafico_percentuale {
@@ -458,7 +459,7 @@ footer {
 }
 
 .cerchio_esterno {
-  padding-top: 75px;
+  padding-top: 93px;
 }
 
 .contenitore_cerchio {
@@ -498,6 +499,7 @@ footer {
   justify-content: space-around;
   text-align: center;
   margin: auto;
+  border-radius: 30px;
 }
 
 .corretto {
